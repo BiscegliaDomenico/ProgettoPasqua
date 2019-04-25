@@ -1,0 +1,16 @@
+<form>
+    nome:<input #nome>
+    cognome:<input #cognome>
+    indirizzo:<input #indirizzo>
+    telefono:<input #telefono>
+    email:<input #mail>
+    data:<input #data>
+    ora:<input #ora>
+    <button (click)="onAddCliente(nome, cognome, indirizzo, telefono, email, data, ora)">prenota</button>
+
+
+</form>
+<h2>Appuntamenti : </h2>
+<ul>
+<li *ngFor = "let Cliente of appointment">{{Cliente}}</li>
+</ul>
