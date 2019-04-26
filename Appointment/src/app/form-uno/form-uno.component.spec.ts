@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormInserimentoComponent } from './form-inserimento.component';
+import { FormUnoComponent } from './form-uno.component';
 
-describe('FormInserimentoComponent', () => {
-  let component: FormInserimentoComponent;
-  let fixture: ComponentFixture<FormInserimentoComponent>;
+describe('FormUnoComponent', () => {
+  let component: FormUnoComponent;
+  let fixture: ComponentFixture<FormUnoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FormInserimentoComponent ]
+      declarations: [ FormUnoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormInserimentoComponent);
+    fixture = TestBed.createComponent(FormUnoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

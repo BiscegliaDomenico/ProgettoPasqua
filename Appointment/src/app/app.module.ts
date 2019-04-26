@@ -2,17 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { FormInserimentoComponent } from './form-inserimento/form-inserimento.component';
-import { FormListaComponent } from './form-lista/form-lista.component';
+import { FormUnoComponent } from './form-uno/form-uno.component';
 
+import{FormsModule, ReactiveFormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    FormInserimentoComponent,
-    FormListaComponent
+    FormUnoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

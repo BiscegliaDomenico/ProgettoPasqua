@@ -1,0 +1,68 @@
+<div>
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)">
+      <!--nome-->
+      <div class="form-group">
+        <label for="nomeInput">NOME</label>
+        <input type="text" id="nomeInput" placeholder="NOME" name="nome"
+              [formControl]="myForm.controls['nome']" class="form-control">
+      </div>
+
+      <!--cognome-->
+      <div class="form-group">
+        <label for="cognomeInput">COGNOME</label>
+        <input type="text" id="cognomeInput" placeholder="COGNOME" name="cognome"
+              [formControl]="myForm.controls['cognome']" class="form-control">
+      </div>
+
+      <!--indirizzo-->
+      <div class="form-group">
+        <label for="indirizzoInput">INDIRIZZO</label>
+        <input type="text" id="indirizzoInput" placeholder="INDIRIZZO" name="indirizzo"
+              [formControl]="myForm.controls['indirizzo']" class="form-control">
+      </div>
+
+      <!--telefono-->
+      <div class="form-group">
+        <label for="telefonoInput">TELEFONO</label>
+        <input type="tel" id="telefonoInput" placeholder="TELEFONO" name="telefono"
+              [formControl]="myForm.controls['telefono']" class="form-control">
+      </div>
+
+      <!--email-->
+      <div class="form-group">
+        <label for="emailInput">EMAIL</label>
+        <input type="mail" id="emailInput" placeholder="EMAIL" name="email"
+              [formControl]="myForm.controls['email']" class="form-control">
+      </div>
+
+      <!--data-->
+      <div class="form-group">
+        <label for="dataInput">DATA</label>
+        <input type="date" id="dataInput" placeholder="DATA" name="data"
+              [formControl]="myForm.controls['data']" class="form-control">
+      </div>
+
+      <!--ora-->
+      <div class="form-group">
+        <label for="oraInput">ORA</label>
+        <input type="time" id="oraInput" placeholder="ORA" name="ora"
+              [formControl]="myForm.controls['ora']" class="form-control">
+      </div>
+      <!--
+      <div *ngIf="!myForm.controls['ora'].valid"
+      class="alert alert-danger">ORA is invalid
+      </div>
+
+      <div *ngIf="myForm.controls['ora'].hasError('required')"
+              class="alert alert-danger">ORA is required
+      </div>
+      -->
+
+
+
+      <!--bottone-->
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+  </form>
+</div>
+
